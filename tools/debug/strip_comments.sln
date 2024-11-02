@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "strip_comments", "..\..\final\debug\strip_comments.exe", "{834CC5FF-69E9-41AD-9555-D48FA2C4366D}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\ProgrammingCDrive\strip_comments\final\debug\strip_comments.exe
+		RemoteMachine = AZENRIS
+		StartingDirectory = C:\ProgrammingCDrive\strip_comments\final\debug
+		Arguments = 
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DAC4164-BB13-47FD-B36D-F767072DA14F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\array.h = ..\..\src\array.h
+		..\..\src\core.h = ..\..\src\core.h
+		..\..\src\file_functions.h = ..\..\src\file_functions.h
+		..\..\src\main.cpp = ..\..\src\main.cpp
+		..\..\src\map.h = ..\..\src\map.h
+		..\..\src\math_functions.h = ..\..\src\math_functions.h
+		..\..\src\memory_functions.h = ..\..\src\memory_functions.h
+		..\..\src\platform.h = ..\..\src\platform.h
+		..\..\src\platform_windows.cpp = ..\..\src\platform_windows.cpp
+		..\..\src\random_functions.h = ..\..\src\random_functions.h
+		..\..\src\string_functions.h = ..\..\src\string_functions.h
+		..\..\src\utility.cpp = ..\..\src\utility.cpp
+		..\..\src\utility.h = ..\..\src\utility.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834CC5FF-69E9-41AD-9555-D48FA2C4366D}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {203B3756-F2B8-4B7D-8685-F05E43F067FF}
+	EndGlobalSection
+EndGlobal
