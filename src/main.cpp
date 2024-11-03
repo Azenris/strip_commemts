@@ -95,17 +95,33 @@ int main( int argc, char *argv[] )
 			}
 			else if ( !inComment )
 			{
-				if ( l != '\\' )
+				if ( l != '\\' && ( c == '"' || c == '\'' ) )
 				{
-					if ( c == '"' && stringLiteralOpener == '"' )
+					if ( !inStringLiteral )
 					{
-						inStringLiteral = !inStringLiteral;
-						stringLiteralOpener = '"';
+						if ( c == '"' )
+						{
+							inStringLiteral = true;
+							stringLiteralOpener = '"';
+						}
+						else if ( c == '\'' )
+						{
+							inStringLiteral = true;
+							stringLiteralOpener = '\'';
+						}
 					}
-					else if ( c == '\'' && stringLiteralOpener == '\'' )
+					else
 					{
-						inStringLiteral = !inStringLiteral;
-						stringLiteralOpener = '\'';
+						if ( c == '"' && stringLiteralOpener == '"' )
+						{
+							inStringLiteral = false;
+							stringLiteralOpener = '\0';
+						}
+						else if ( c == '\'' && stringLiteralOpener == '\'' )
+						{
+							inStringLiteral = false;
+							stringLiteralOpener = '\0';
+						}
 					}
 				}
 
