@@ -936,6 +936,7 @@ inline void normalise( vec4 &vec )
 [[nodiscard]] constexpr inline ivec2 to_ivec2( u32 x, u32 y ) { return { (i32)x, (i32)y }; }
 [[nodiscard]] constexpr inline ivec2 to_ivec2( f32 x, f32 y ) { return { (i32)x, (i32)y }; }
 [[nodiscard]] constexpr inline ivec2 to_ivec2( i32 x, f32 y ) { return { x, (i32)y }; }
+[[nodiscard]] constexpr inline ivec2 to_ivec2( i32 x, i32 y ) { return { x, y }; }
 [[nodiscard]] constexpr inline ivec2 to_ivec2( f32 x, i32 y ) { return { (i32)x, y }; }
 [[nodiscard]] constexpr inline ivec2 to_ivec2( u32 x, f32 y ) { return { (i32)x, (i32)y }; }
 [[nodiscard]] constexpr inline ivec2 to_ivec2( f32 x, u32 y ) { return { (i32)x, (i32)y }; }
@@ -1203,6 +1204,7 @@ inline void normalise( ivec2 &vec )
 [[nodiscard]] constexpr inline ivec3 to_ivec3( vec2 vec ) { return { (i32)vec.x, (i32)vec.y, 0 }; }
 [[nodiscard]] constexpr inline ivec3 to_ivec3( vec3 vec ) { return { (i32)vec.x, (i32)vec.y, (i32)vec.z }; }
 [[nodiscard]] constexpr inline ivec3 to_ivec3( vec4 vec ) { return { (i32)vec.x, (i32)vec.y, (i32)vec.z }; }
+[[nodiscard]] constexpr inline ivec3 to_ivec3( i32 x, i32 y, i32 z ) { return { x, y, z }; }
 [[nodiscard]] constexpr inline ivec3 to_ivec3( i32 x, i32 y, f32 z ) { return { x, y, (i32)z }; }
 [[nodiscard]] constexpr inline ivec3 to_ivec3( i32 x, f32 y, i32 z ) { return { x, (i32)y, z }; }
 [[nodiscard]] constexpr inline ivec3 to_ivec3( i32 x, f32 y, f32 z ) { return { x, (i32)y, (i32)z }; }

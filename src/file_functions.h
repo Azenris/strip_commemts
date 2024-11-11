@@ -102,7 +102,6 @@ void close_file( u64 fileID );
 u64 get_file_size( u64 fileID );
 bool seek_in_file( u64 fileID, FileSeek seek, u64 offset );
 u8 *read_whole_file( u64 fileID, Allocator *allocator, bool addNullTerminator );
-u8 *read_image( const char *path, u32 *width, u32 *height, u32 *channels );
 u64 read_from_file( u64 fileID, void *buffer, u64 size );
 u64 write_to_file( u64 fileID, const void *buffer, u64 size );
 void file_flush( u64 fileID );

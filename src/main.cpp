@@ -132,15 +132,15 @@ int main( int argc, char *argv[] )
 			c = *src++;
 		}
 
-		memory->transient.free( newFile );
-		memory->transient.free( file );
-
 		log( "Writing file: %s", filepath );
 
 		if ( write_file( filepath, newFile, dst - newFile, false ) == 0 )
 		{
 			log_warning( "Failed to write file: %s", filepath );
 		}
+
+		memory->transient.free( newFile );
+		memory->transient.free( file );
 	}
 
 	return 0;
